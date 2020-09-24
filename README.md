@@ -11,8 +11,8 @@ The created demo project contains:
 
 # Description
 
-The [resources/data.json](./resources/data.json) file contains all the information to create the initial issues and their assocaiations.
-There are also other resource+ files used to import execution results in various technologies.
+The [resources/data.json](./resources/data.json) file contains all the information to create the initial issues and their associations.
+There are also other resource files used to import execution results in various technologies.
 
 The script uses APIs from Jira and Xray to create all the entities based in these resources.
 
@@ -34,7 +34,7 @@ The script is written in [Python](https://www.python.org/). You must install [Py
 ## Setup
 
 In order to run this script you need to provide the following information in the [credentials.py](./credentials.py) file:
- - Jira Instance Url
+ - Jira Instance URL
  - Jira user email
  - Jira API token
  - Xray API Key (client and secret)
