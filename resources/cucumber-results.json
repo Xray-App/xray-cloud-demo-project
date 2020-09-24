@@ -1,0 +1,1472 @@
+[
+   {
+      "id":"test-plan-for-v1.0-release",
+      "uri":"features/demo.feature",
+      "keyword":"Feature",
+      "name":"Test Plan for v1.0 release",
+      "description":"",
+      "line":1,
+      "elements":[
+         {
+            "id":"test-plan-for-v1.0-release;test-a-visitor-can-do-a-valid-search-with-multiple-keywords;;2",
+            "keyword":"Scenario Outline",
+            "name":"Test a visitor can do a valid search with multiple keywords",
+            "description":"",
+            "line":11,
+            "type":"scenario",
+            "tags":[
+               {
+                  "name":"@TEST_EXT-KEY-32",
+                  "line":3
+               }
+            ],
+            "steps":[
+               {
+                  "keyword":"Given ",
+                  "name":"I am on the homepage to do a single keyword search",
+                  "line":5,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:165"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":23000
+                  }
+               },
+               {
+                  "keyword":"When ",
+                  "name":"I do a single keyword search for Lord of the Rings",
+                  "line":6,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:169"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":12000
+                  }
+               },
+               {
+                  "keyword":"Then ",
+                  "name":"I see a single keyword search result page with more than zero results",
+                  "line":7,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:173"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":8000
+                  }
+               }
+            ]
+         },
+         {
+            "id":"test-plan-for-v1.0-release;test-a-visitor-can-do-a-valid-search-with-multiple-keywords;;3",
+            "keyword":"Scenario Outline",
+            "name":"Test a visitor can do a valid search with multiple keywords",
+            "description":"",
+            "line":12,
+            "type":"scenario",
+            "tags":[
+               {
+                  "name":"@TEST_EXT-KEY-32",
+                  "line":3
+               }
+            ],
+            "steps":[
+               {
+                  "keyword":"Given ",
+                  "name":"I am on the homepage to do a single keyword search",
+                  "line":5,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:165"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":13000
+                  }
+               },
+               {
+                  "keyword":"When ",
+                  "name":"I do a single keyword search for Moby Dick",
+                  "line":6,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:177"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":7000
+                  }
+               },
+               {
+                  "keyword":"Then ",
+                  "name":"I see a single keyword search result page with more than zero results",
+                  "line":7,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:173"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":8000
+                  }
+               }
+            ]
+         },
+         {
+            "id":"test-plan-for-v1.0-release;test-a-visitor-can-do-a-valid-search-with-multiple-keywords;;4",
+            "keyword":"Scenario Outline",
+            "name":"Test a visitor can do a valid search with multiple keywords",
+            "description":"",
+            "line":13,
+            "type":"scenario",
+            "tags":[
+               {
+                  "name":"@TEST_EXT-KEY-32",
+                  "line":3
+               }
+            ],
+            "steps":[
+               {
+                  "keyword":"Given ",
+                  "name":"I am on the homepage to do a single keyword search",
+                  "line":5,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:165"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":14000
+                  }
+               },
+               {
+                  "keyword":"When ",
+                  "name":"I do a single keyword search for The Odyssey",
+                  "line":6,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:181"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":8000
+                  }
+               },
+               {
+                  "keyword":"Then ",
+                  "name":"I see a single keyword search result page with more than zero results",
+                  "line":7,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:173"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":8000
+                  }
+               }
+            ]
+         },
+         {
+            "id":"test-plan-for-v1.0-release;test-a-visitor-can-do-a-valid-search-with-multiple-keywords;;5",
+            "keyword":"Scenario Outline",
+            "name":"Test a visitor can do a valid search with multiple keywords",
+            "description":"",
+            "line":14,
+            "type":"scenario",
+            "tags":[
+               {
+                  "name":"@TEST_EXT-KEY-32",
+                  "line":3
+               }
+            ],
+            "steps":[
+               {
+                  "keyword":"Given ",
+                  "name":"I am on the homepage to do a single keyword search",
+                  "line":5,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:165"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":13000
+                  }
+               },
+               {
+                  "keyword":"When ",
+                  "name":"I do a single keyword search for War and Peace",
+                  "line":6,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:185"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":8000
+                  }
+               },
+               {
+                  "keyword":"Then ",
+                  "name":"I see a single keyword search result page with more than zero results",
+                  "line":7,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:173"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":8000
+                  }
+               }
+            ]
+         },
+         {
+            "id":"test-plan-for-v1.0-release;test-a-visitor-can-do-a-valid-search-with-a-single-keyword;;2",
+            "keyword":"Scenario Outline",
+            "name":"Test a visitor can do a valid search with a single keyword",
+            "description":"",
+            "line":23,
+            "type":"scenario",
+            "tags":[
+               {
+                  "name":"@TEST_EXT-KEY-31",
+                  "line":15
+               }
+            ],
+            "steps":[
+               {
+                  "keyword":"Given ",
+                  "name":"I am on the homepage to do a single keyword search",
+                  "line":17,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:165"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":10000
+                  }
+               },
+               {
+                  "keyword":"When ",
+                  "name":"I do a single keyword search for Rings",
+                  "line":18,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:189"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":8000
+                  }
+               },
+               {
+                  "keyword":"Then ",
+                  "name":"I see a single keyword search result page with more than zero results",
+                  "line":19,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:173"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":7000
+                  }
+               }
+            ]
+         },
+         {
+            "id":"test-plan-for-v1.0-release;test-a-visitor-can-do-a-valid-search-with-a-single-keyword;;3",
+            "keyword":"Scenario Outline",
+            "name":"Test a visitor can do a valid search with a single keyword",
+            "description":"",
+            "line":24,
+            "type":"scenario",
+            "tags":[
+               {
+                  "name":"@TEST_EXT-KEY-31",
+                  "line":15
+               }
+            ],
+            "steps":[
+               {
+                  "keyword":"Given ",
+                  "name":"I am on the homepage to do a single keyword search",
+                  "line":17,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:165"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":10000
+                  }
+               },
+               {
+                  "keyword":"When ",
+                  "name":"I do a single keyword search for Ulysses",
+                  "line":18,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:193"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":8000
+                  }
+               },
+               {
+                  "keyword":"Then ",
+                  "name":"I see a single keyword search result page with more than zero results",
+                  "line":19,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:173"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":7000
+                  }
+               }
+            ]
+         },
+         {
+            "id":"test-plan-for-v1.0-release;test-a-visitor-can-do-a-valid-search-with-a-single-keyword;;4",
+            "keyword":"Scenario Outline",
+            "name":"Test a visitor can do a valid search with a single keyword",
+            "description":"",
+            "line":25,
+            "type":"scenario",
+            "tags":[
+               {
+                  "name":"@TEST_EXT-KEY-31",
+                  "line":15
+               }
+            ],
+            "steps":[
+               {
+                  "keyword":"Given ",
+                  "name":"I am on the homepage to do a single keyword search",
+                  "line":17,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:165"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":10000
+                  }
+               },
+               {
+                  "keyword":"When ",
+                  "name":"I do a single keyword search for Moby",
+                  "line":18,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:197"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":8000
+                  }
+               },
+               {
+                  "keyword":"Then ",
+                  "name":"I see a single keyword search result page with more than zero results",
+                  "line":19,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:173"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":8000
+                  }
+               }
+            ]
+         },
+         {
+            "id":"test-plan-for-v1.0-release;test-a-visitor-can-do-a-valid-search-with-a-single-keyword;;5",
+            "keyword":"Scenario Outline",
+            "name":"Test a visitor can do a valid search with a single keyword",
+            "description":"",
+            "line":26,
+            "type":"scenario",
+            "tags":[
+               {
+                  "name":"@TEST_EXT-KEY-31",
+                  "line":15
+               }
+            ],
+            "steps":[
+               {
+                  "keyword":"Given ",
+                  "name":"I am on the homepage to do a single keyword search",
+                  "line":17,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:165"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":10000
+                  }
+               },
+               {
+                  "keyword":"When ",
+                  "name":"I do a single keyword search for Odyssey",
+                  "line":18,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:201"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":8000
+                  }
+               },
+               {
+                  "keyword":"Then ",
+                  "name":"I see a single keyword search result page with more than zero results",
+                  "line":19,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:173"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":7000
+                  }
+               }
+            ]
+         },
+         {
+            "id":"test-plan-for-v1.0-release;test-a-visitor-can-view-all-the-books-in-his-shopping-basket",
+            "keyword":"Scenario",
+            "name":"Test a visitor can view all the books in his shopping basket",
+            "description":"",
+            "line":28,
+            "type":"scenario",
+            "tags":[
+               {
+                  "name":"@TEST_EXT-KEY-30",
+                  "line":27
+               }
+            ],
+            "steps":[
+               {
+                  "keyword":"Given ",
+                  "name":"that I have added books to my shopping basket",
+                  "line":29,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:205"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":15000
+                  }
+               },
+               {
+                  "keyword":"When ",
+                  "name":"I click the shopping bag icon",
+                  "line":30,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:109"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":9000
+                  }
+               },
+               {
+                  "keyword":"Then ",
+                  "name":"I land on the shopping bag page",
+                  "line":31,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:209"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":7000
+                  }
+               },
+               {
+                  "keyword":"And ",
+                  "name":"I can see all the books in my shopping basket",
+                  "line":32,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:213"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":8000
+                  }
+               }
+            ]
+         },
+         {
+            "id":"test-plan-for-v1.0-release;test-a-visitor-can-filter-the-search-result",
+            "keyword":"Scenario",
+            "name":"Test a visitor can filter the search result",
+            "description":"",
+            "line":34,
+            "type":"scenario",
+            "tags":[
+               {
+                  "name":"@TEST_EXT-KEY-33",
+                  "line":33
+               }
+            ],
+            "steps":[
+               {
+                  "keyword":"Given ",
+                  "name":"I have done a search using a valid search term",
+                  "line":35,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:149"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":11000
+                  }
+               },
+               {
+                  "keyword":"And ",
+                  "name":"I see a certain amount of items",
+                  "line":36,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:153"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":8000
+                  }
+               },
+               {
+                  "keyword":"When ",
+                  "name":"I filter using a sub-keyword",
+                  "line":37,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:157"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":7000
+                  }
+               },
+               {
+                  "keyword":"Then ",
+                  "name":"The results are filtered to display a smaller amount of items",
+                  "line":38,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:161"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":8000
+                  }
+               }
+            ]
+         },
+         {
+            "id":"test-plan-for-v1.0-release;test-visitors-can-remove-books-from-their-shopping-basket",
+            "keyword":"Scenario",
+            "name":"Test visitors can remove books from their shopping basket",
+            "description":"",
+            "line":40,
+            "type":"scenario",
+            "tags":[
+               {
+                  "name":"@TEST_EXT-KEY-29",
+                  "line":39
+               }
+            ],
+            "steps":[
+               {
+                  "keyword":"Given ",
+                  "name":"I am on shopping basket page",
+                  "line":41,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:217"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":11000
+                  }
+               },
+               {
+                  "keyword":"When ",
+                  "name":"I click the remove from basket button for a listed book",
+                  "line":42,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:221"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":8000
+                  }
+               },
+               {
+                  "keyword":"Then ",
+                  "name":"the book is deleted from my shopping basket",
+                  "line":43,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:225"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":8000
+                  }
+               }
+            ]
+         },
+         {
+            "id":"test-plan-for-v1.0-release;test-visitors-can-add-books-to-their-shopping-basket",
+            "keyword":"Scenario",
+            "name":"Test visitors can add books to their shopping basket",
+            "description":"",
+            "line":45,
+            "type":"scenario",
+            "tags":[
+               {
+                  "name":"@TEST_EXT-KEY-28",
+                  "line":44
+               }
+            ],
+            "steps":[
+               {
+                  "keyword":"Given ",
+                  "name":"I am on a product detail page",
+                  "line":46,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:229"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":10000
+                  }
+               },
+               {
+                  "keyword":"When ",
+                  "name":"I select the size/color/amount",
+                  "line":47,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:233"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":8000
+                  }
+               },
+               {
+                  "keyword":"And ",
+                  "name":"I click the add to basket button",
+                  "line":48,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:237"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":20000
+                  }
+               },
+               {
+                  "keyword":"Then ",
+                  "name":"the product is added to my shopping basket",
+                  "line":49,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:241"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":8000
+                  }
+               }
+            ]
+         },
+         {
+            "id":"test-plan-for-v1.0-release;test-visitors-can-navigate-to-the-book-details-page",
+            "keyword":"Scenario",
+            "name":"Test visitors can navigate to the book details page",
+            "description":"",
+            "line":51,
+            "type":"scenario",
+            "tags":[
+               {
+                  "name":"@TEST_EXT-KEY-27",
+                  "line":50
+               }
+            ],
+            "steps":[
+               {
+                  "keyword":"Given ",
+                  "name":"I am on a product lister page",
+                  "line":52,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:245"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":13000
+                  }
+               },
+               {
+                  "keyword":"When ",
+                  "name":"I select one of the items",
+                  "line":53,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:249"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":8000
+                  }
+               },
+               {
+                  "keyword":"Then ",
+                  "name":"I am on the Product detail page of the selected item",
+                  "line":54,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:253"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":7000
+                  }
+               },
+               {
+                  "keyword":"And ",
+                  "name":"I can see details of the product",
+                  "line":55,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:257"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":7000
+                  }
+               }
+            ]
+         },
+         {
+            "id":"test-plan-for-v1.0-release;test-checkout-with-incorrect-delivery-details",
+            "keyword":"Scenario",
+            "name":"Test Checkout with incorrect delivery details",
+            "description":"",
+            "line":57,
+            "type":"scenario",
+            "tags":[
+               {
+                  "name":"@TEST_EXT-KEY-24",
+                  "line":56
+               }
+            ],
+            "steps":[
+               {
+                  "keyword":"Given ",
+                  "name":"I have added an item to my shopping bag",
+                  "line":58,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:105"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":10000
+                  }
+               },
+               {
+                  "keyword":"And ",
+                  "name":"I click the shopping bag icon",
+                  "line":59,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:109"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":8000
+                  }
+               },
+               {
+                  "keyword":"When ",
+                  "name":"I proceed to check out",
+                  "line":60,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:113"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":10000
+                  }
+               },
+               {
+                  "keyword":"And ",
+                  "name":"I select a payment method",
+                  "line":61,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:117"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":7000
+                  }
+               },
+               {
+                  "keyword":"And ",
+                  "name":"I enter invalid details",
+                  "line":62,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:121"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":7000
+                  }
+               },
+               {
+                  "keyword":"And ",
+                  "name":"I click the pay button",
+                  "line":63,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:125"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":7000
+                  }
+               },
+               {
+                  "keyword":"Then ",
+                  "name":"I receive feedback that the purchase details are incorrect",
+                  "line":64,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:129"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":8000
+                  }
+               }
+            ]
+         },
+         {
+            "id":"test-plan-for-v1.0-release;test-a-visitor-can-checkout-items-in-his-basket",
+            "keyword":"Scenario",
+            "name":"Test a visitor can Checkout items in his basket",
+            "description":"",
+            "line":66,
+            "type":"scenario",
+            "tags":[
+               {
+                  "name":"@TEST_EXT-KEY-23",
+                  "line":65
+               }
+            ],
+            "steps":[
+               {
+                  "keyword":"Given ",
+                  "name":"I have added an item to my shopping bag",
+                  "line":67,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:105"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":14000
+                  }
+               },
+               {
+                  "keyword":"When ",
+                  "name":"I proceed to the check out",
+                  "line":68,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:133"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":8000
+                  }
+               },
+               {
+                  "keyword":"And ",
+                  "name":"I enter valid delivery details",
+                  "line":69,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:137"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":7000
+                  }
+               },
+               {
+                  "keyword":"And ",
+                  "name":"I select a payment method",
+                  "line":70,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:117"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":7000
+                  }
+               },
+               {
+                  "keyword":"And ",
+                  "name":"I I confirm the order",
+                  "line":71,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:141"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":7000
+                  }
+               },
+               {
+                  "keyword":"Then ",
+                  "name":"I am redirected to the thank you page",
+                  "line":72,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:145"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":10000
+                  }
+               }
+            ]
+         },
+         {
+            "id":"test-plan-for-v1.0-release;test-a-visitor-can-change-his-locale;;2",
+            "keyword":"Scenario Outline",
+            "name":"Test a visitor can change his locale",
+            "description":"",
+            "line":82,
+            "type":"scenario",
+            "tags":[
+               {
+                  "name":"@TEST_EXT-KEY-22",
+                  "line":73
+               }
+            ],
+            "steps":[
+               {
+                  "keyword":"Given ",
+                  "name":"I am logged in",
+                  "line":75,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:65"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":11000
+                  }
+               },
+               {
+                  "keyword":"And ",
+                  "name":"I navigate to the locale selector page",
+                  "line":76,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:69"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":9000
+                  }
+               },
+               {
+                  "keyword":"When ",
+                  "name":"I select USA as a country",
+                  "line":77,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:73"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":8000
+                  }
+               },
+               {
+                  "keyword":"Then ",
+                  "name":"The US site is shown",
+                  "line":78,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:77"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":7000
+                  }
+               }
+            ]
+         },
+         {
+            "id":"test-plan-for-v1.0-release;test-a-visitor-can-change-his-locale;;3",
+            "keyword":"Scenario Outline",
+            "name":"Test a visitor can change his locale",
+            "description":"",
+            "line":83,
+            "type":"scenario",
+            "tags":[
+               {
+                  "name":"@TEST_EXT-KEY-22",
+                  "line":73
+               }
+            ],
+            "steps":[
+               {
+                  "keyword":"Given ",
+                  "name":"I am logged in",
+                  "line":75,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:65"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":10000
+                  }
+               },
+               {
+                  "keyword":"And ",
+                  "name":"I navigate to the locale selector page",
+                  "line":76,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:69"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":18000
+                  }
+               },
+               {
+                  "keyword":"When ",
+                  "name":"I select Portugal as a country",
+                  "line":77,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:81"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":7000
+                  }
+               },
+               {
+                  "keyword":"Then ",
+                  "name":"The PT site is shown",
+                  "line":78,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:85"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":7000
+                  }
+               }
+            ]
+         },
+         {
+            "id":"test-plan-for-v1.0-release;test-a-visitor-can-change-his-locale;;4",
+            "keyword":"Scenario Outline",
+            "name":"Test a visitor can change his locale",
+            "description":"",
+            "line":84,
+            "type":"scenario",
+            "tags":[
+               {
+                  "name":"@TEST_EXT-KEY-22",
+                  "line":73
+               }
+            ],
+            "steps":[
+               {
+                  "keyword":"Given ",
+                  "name":"I am logged in",
+                  "line":75,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:65"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":10000
+                  }
+               },
+               {
+                  "keyword":"And ",
+                  "name":"I navigate to the locale selector page",
+                  "line":76,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:69"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":10000
+                  }
+               },
+               {
+                  "keyword":"When ",
+                  "name":"I select Spain as a country",
+                  "line":77,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:89"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":15000
+                  }
+               },
+               {
+                  "keyword":"Then ",
+                  "name":"The ES site is shown",
+                  "line":78,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:93"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":7000
+                  }
+               }
+            ]
+         },
+         {
+            "id":"test-plan-for-v1.0-release;test-a-visitor-can-change-his-locale;;5",
+            "keyword":"Scenario Outline",
+            "name":"Test a visitor can change his locale",
+            "description":"",
+            "line":85,
+            "type":"scenario",
+            "tags":[
+               {
+                  "name":"@TEST_EXT-KEY-22",
+                  "line":73
+               }
+            ],
+            "steps":[
+               {
+                  "keyword":"Given ",
+                  "name":"I am logged in",
+                  "line":75,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:65"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":10000
+                  }
+               },
+               {
+                  "keyword":"And ",
+                  "name":"I navigate to the locale selector page",
+                  "line":76,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:69"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":9000
+                  }
+               },
+               {
+                  "keyword":"When ",
+                  "name":"I select Germany as a country",
+                  "line":77,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:97"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":7000
+                  }
+               },
+               {
+                  "keyword":"Then ",
+                  "name":"The DE site is shown",
+                  "line":78,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:101"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":7000
+                  }
+               }
+            ]
+         },
+         {
+            "id":"test-plan-for-v1.0-release;test-a-logged-in-visitor-can-edit-the-default-address",
+            "keyword":"Scenario",
+            "name":"Test a logged in visitor can edit the default address",
+            "description":"",
+            "line":87,
+            "type":"scenario",
+            "tags":[
+               {
+                  "name":"@TEST_EXT-KEY-21",
+                  "line":86
+               }
+            ],
+            "steps":[
+               {
+                  "keyword":"Given ",
+                  "name":"I am logged in on the site",
+                  "line":88,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:5"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":10000
+                  }
+               },
+               {
+                  "keyword":"When ",
+                  "name":"I navigate to the personal information page",
+                  "line":89,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:9"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":8000
+                  }
+               },
+               {
+                  "keyword":"And ",
+                  "name":"I navigate to the default address page",
+                  "line":90,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:13"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":8000
+                  }
+               },
+               {
+                  "keyword":"And ",
+                  "name":"I change my street name",
+                  "line":91,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:17"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":7000
+                  }
+               },
+               {
+                  "keyword":"Then ",
+                  "name":"I receive feedback that my account is updated",
+                  "line":92,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:21"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":17000
+                  }
+               }
+            ]
+         },
+         {
+            "id":"test-plan-for-v1.0-release;test-a-logged-in-visitor-can-edit-the-account-details",
+            "keyword":"Scenario",
+            "name":"Test a logged in visitor can edit the account details",
+            "description":"",
+            "line":94,
+            "type":"scenario",
+            "tags":[
+               {
+                  "name":"@TEST_EXT-KEY-20",
+                  "line":93
+               }
+            ],
+            "steps":[
+               {
+                  "keyword":"Given ",
+                  "name":"I am logged in on the site",
+                  "line":95,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:5"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":10000
+                  }
+               },
+               {
+                  "keyword":"When ",
+                  "name":"I navigate to the personal information page",
+                  "line":96,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:9"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":10000
+                  }
+               },
+               {
+                  "keyword":"And ",
+                  "name":"I update my details",
+                  "line":97,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:25"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":7000
+                  }
+               },
+               {
+                  "keyword":"Then ",
+                  "name":"I receive feedback that my account is updated",
+                  "line":98,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:21"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":7000
+                  }
+               }
+            ]
+         },
+         {
+            "id":"test-plan-for-v1.0-release;test-logged-in-visitors-can-logout-from-their-account",
+            "keyword":"Scenario",
+            "name":"Test logged in visitors can Logout from their account",
+            "description":"",
+            "line":100,
+            "type":"scenario",
+            "tags":[
+               {
+                  "name":"@TEST_EXT-KEY-19",
+                  "line":99
+               }
+            ],
+            "steps":[
+               {
+                  "keyword":"Given ",
+                  "name":"I am logged in on the site",
+                  "line":101,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:5"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":12000
+                  }
+               },
+               {
+                  "keyword":"When ",
+                  "name":"I click the Log out button",
+                  "line":102,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:29"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":8000
+                  }
+               },
+               {
+                  "keyword":"Then ",
+                  "name":"I receive feedback that I am logged out",
+                  "line":103,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:33"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":7000
+                  }
+               },
+               {
+                  "keyword":"And ",
+                  "name":"I cannot visit my account page anymore",
+                  "line":104,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:37"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":8000
+                  }
+               }
+            ]
+         },
+         {
+            "id":"test-plan-for-v1.0-release;test-visitors-can-login-to-book-store-website",
+            "keyword":"Scenario",
+            "name":"Test visitors can Login to Book Store Website",
+            "description":"",
+            "line":106,
+            "type":"scenario",
+            "tags":[
+               {
+                  "name":"@TEST_EXT-KEY-18",
+                  "line":105
+               }
+            ],
+            "steps":[
+               {
+                  "keyword":"Given ",
+                  "name":"I am not logged in",
+                  "line":107,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:41"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":10000
+                  }
+               },
+               {
+                  "keyword":"And ",
+                  "name":"I am on the log in page",
+                  "line":108,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:45"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":16000
+                  }
+               },
+               {
+                  "keyword":"When ",
+                  "name":"I enter my username",
+                  "line":109,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:49"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":9000
+                  }
+               },
+               {
+                  "keyword":"And ",
+                  "name":"I enter my password",
+                  "line":110,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:53"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":7000
+                  }
+               },
+               {
+                  "keyword":"And ",
+                  "name":"I click the login button",
+                  "line":111,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:57"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":6000
+                  }
+               },
+               {
+                  "keyword":"Then ",
+                  "name":"I am on logged in",
+                  "line":112,
+                  "match":{
+                     "location":"features/step_definitions/book_store_steps.rb:61"
+                  },
+                  "result":{
+                     "status":"passed",
+                     "duration":7000
+                  }
+               }
+            ]
+         }
+      ]
+   }
+]

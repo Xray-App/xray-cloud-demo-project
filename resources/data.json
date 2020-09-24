@@ -1,0 +1,521 @@
+{
+	"project": {
+		"key": "BOOK",
+		"name": "Book Store",
+		"description": "Book Store Web App",
+		"url": "https://www.getxray.app/",
+		"components": [
+			{
+	  			"name": "Search"
+			},
+			{
+	  			"name": "Checkout"
+			},
+			{
+	  			"name": "Account"
+			}
+		],
+		"versions": [
+			{
+				"name": "1.0"
+			},
+			{
+				"name": "2.0"
+			},
+			{
+				"name": "3.0"
+			}
+		]
+	},
+	"issues": [
+		{
+			"extKey": "EXT-KEY-1",
+			"summary": "As a visitor, I can manage my account",
+			"description": "As a visitor of the book store website\nI want to be able to see and update my account details\nSo that my details for ordering and delivery are correct",
+			"issueType": "Epic",
+			"components": ["Account"],
+			"fixVersions": ["1.0"],
+			"epicName": "Manage Account"
+		},
+		{
+			"extKey": "EXT-KEY-2",
+			"summary": "As a visitor, I can Login to Book Store Website",
+			"description": "",
+			"issueType": "Story",
+			"components": ["Account"],
+			"fixVersions": ["1.0"],
+			"epicLink": "Manage Account"
+		},
+		{
+			"extKey": "EXT-KEY-3",
+			"summary": "As a visitor, I can Logout from my account",
+			"description": "",
+			"issueType": "Story",
+			"components": ["Account"],
+			"fixVersions": ["1.0"],
+			"epicLink": "Manage Account"
+		},
+		{
+			"extKey": "EXT-KEY-4",
+			"summary": "As a visitor, I can edit my account details",
+			"description": "",
+			"issueType": "Story",
+			"components": ["Account"],
+			"fixVersions": ["1.0"],
+			"epicLink": "Manage Account"
+		},
+		{
+			"extKey": "EXT-KEY-5",
+			"summary": "As a visitor, I can change my locale",
+			"description": "As a visitor of the book store website\nI want to be able to change the locale\nSo that the site is using my language, country and/or currency",
+			"issueType": "Story",
+			"fixVersions": ["1.0"]
+		},
+		{
+			"extKey": "EXT-KEY-6",
+			"summary": "As a visitor, I can Checkout items in my basket",
+			"description": "As a visitor of the book store website\nI want to be able to do a purchase\nSo that I can get the product that I want",
+			"issueType": "Story",
+			"components": ["Checkout"],
+			"fixVersions": ["1.0"]
+		},
+		{
+			"extKey": "EXT-KEY-7",
+			"summary": "As a visitor, I can register to the book store Newsletter",
+			"description": "As a visitor of the book store website\nI want to register for the newsletter\nSo that I stay up to date on new products and sales",
+			"issueType": "Story",
+			"fixVersions": ["1.0"]
+		},
+		{
+			"extKey": "EXT-KEY-8",
+			"summary": "As a visitor, I can search for books in the store",
+			"description": "As a visitor of the book store website\nI want to search for products\nSo that I can quickly find what I am looking for",
+			"issueType": "Story",
+			"components": ["Search"],
+			"fixVersions": ["1.0"]
+		},
+		{
+			"extKey": "EXT-KEY-9",
+			"summary": "As a visitor, I can manage my Shopping Basket",
+			"description": "",
+			"issueType": "Epic",
+			"fixVersions": ["1.0"],
+			"epicName": "Shopping Basket"
+		},
+		{
+			"extKey": "EXT-KEY-10",
+			"summary": "As a visitor, I can add books to my shopping basket",
+			"description": "",
+			"issueType": "Story",
+			"fixVersions": ["1.0"],
+			"epicLink": "Shopping Basket"
+		},
+		{
+			"extKey": "EXT-KEY-11",
+			"summary": "As a visitor, I can remove books from my shopping basket",
+			"description": "",
+			"issueType": "Story",
+			"fixVersions": ["1.0"],
+			"epicLink": "Shopping Basket"
+		},
+		{
+			"extKey": "EXT-KEY-12",
+			"summary": "As a visitor, I can view all the books in my shopping basket",
+			"description": "",
+			"issueType": "Story",
+			"fixVersions": ["1.0"],
+			"epicLink": "Shopping Basket"
+		},
+		{
+			"extKey": "EXT-KEY-13",
+			"summary": "As a visitor, I can navigate to the book store home page",
+			"description": "The home page must be displayed whenever the user logs in.\n\nThe home page is composed by a list of suggested books based on visitor history activity, past orders, past viewed items, etc.",
+			"issueType": "Story",
+			"fixVersions": ["1.0"]
+		},
+		{
+			"extKey": "EXT-KEY-14",
+			"summary": "As a visitor, I can navigate to the book details page",
+			"description": "As a visitor of the book store website\nI want to see the details of the product\nSo that I know if the product fits my needs",
+			"issueType": "Story",
+			"fixVersions": ["1.0"]
+		},
+		{
+			"extKey": "EXT-KEY-15",
+			"summary": "As a user, I want to reset my password so I can regain access when I forget it",
+			"description": "",
+			"issueType": "Story",
+			"components": ["Account"],
+			"fixVersions": ["1.0"]
+		},
+		{
+			"extKey": "EXT-KEY-16",
+			"summary": "Account Security",
+			"description": "",
+			"issueType": "Epic",
+			"components": ["Account"],
+			"fixVersions": ["1.0"],
+			"epicName": "Account Security"
+		},
+		{
+			"extKey": "EXT-KEY-17",
+			"summary": "As a user, I want to be enforced to have a strong password so my account is properly secured",
+			"description": "On the signup screen and change password screen, the password field should require a minimum of 8 characters with at least one number and one capital letter.",
+			"issueType": "Story",
+			"components": ["Account"],
+			"fixVersions": ["1.0"],
+			"epicLink": "Account Security"
+		},
+		{
+			"extKey": "EXT-KEY-43",
+			"summary": "Password validation failed: weak password",
+			"issueType": "Bug",
+			"components": ["Account"]
+		}
+	],
+	"tests": [
+		{
+			"extKey": "EXT-KEY-18",
+			"summary": "Test visitors can Login to Book Store Website",
+			"decription": "",
+			"testType": "Cucumber",
+			"folder": "/Account",
+			"gherkin": "Given I am not logged in\nAnd I am on the log in page\nWhen I enter my username\nAnd I enter my password\nAnd I click the login button\nThen I am on logged in",
+			"tests": "EXT-KEY-2"
+		},
+		{
+			"extKey": "EXT-KEY-19",
+			"summary": "Test logged in visitors can Logout from their account",
+			"decription": "",
+			"testType": "Cucumber",
+			"folder": "/Account",
+			"gherkin": "Given I am logged in on the site\nWhen I click the Log out button\nThen I receive feedback that I am logged out\nAnd I cannot visit my account page anymore",
+			"tests": "EXT-KEY-3"
+		},
+		{
+			"extKey": "EXT-KEY-20",
+			"summary": "Test a logged in visitor can edit the account details",
+			"decription": "",
+			"testType": "Cucumber",
+			"folder": "/Account",
+			"gherkin": "Given I am logged in on the site\nWhen I navigate to the personal information page\nAnd I update my details\nThen I receive feedback that my account is updated",
+			"tests": "EXT-KEY-4"
+		},
+		{
+			"extKey": "EXT-KEY-21",
+			"summary": "Test a logged in visitor can edit the default address",
+			"decription": "",
+			"testType": "Cucumber",
+			"folder": "/Account",
+			"gherkin": "Given I am logged in on the site\nWhen I navigate to the personal information page\nAnd I navigate to the default address page\nAnd I change my street name\nThen I receive feedback that my account is updated",
+			"tests": "EXT-KEY-4"
+		},
+		{
+			"extKey": "EXT-KEY-22",
+			"summary": "Test a visitor can change his locale",
+			"decription": "",
+			"testType": "Cucumber",
+			"gherkin": "Given I am logged in\nAnd I navigate to the locale selector page\nWhen I select <country> as a country\nThen The <locale> site is shown\n\n    Examples:\n        | country  | locale |\n        | USA      | US     |\n        | Portugal | PT     |\n        | Spain    | ES     |\n        | Germany  | DE     |",
+			"tests": "EXT-KEY-5"
+		},
+		{
+			"extKey": "EXT-KEY-23",
+			"summary": "Test a visitor can Checkout items in his basket",
+			"decription": "",
+			"testType": "Cucumber",
+			"folder": "/Shopping Basket/Checkout",
+			"gherkin": "Given I have added an item to my shopping bag\nWhen I proceed to the check out\nAnd I enter valid delivery details\nAnd I select a payment method\nAnd I I confirm the order\nThen I am redirected to the thank you page",
+			"tests": "EXT-KEY-6"
+		},
+		{
+			"extKey": "EXT-KEY-24",
+			"summary": "Test Checkout with incorrect delivery details",
+			"decription": "",
+			"testType": "Cucumber",
+			"folder": "/Shopping Basket/Checkout",
+			"gherkin": "Given I have added an item to my shopping bag\nAnd I click the shopping bag icon\nWhen I proceed to check out\nAnd I select a payment method\nAnd I enter invalid details\nAnd I click the pay button\nThen I receive feedback that the purchase details are incorrect",
+			"tests": "EXT-KEY-6"
+		},
+		{
+			"extKey": "EXT-KEY-25",
+			"summary": "Test visitors can signup to the book store Newsletter",
+			"decription": "",
+			"testType": "Cucumber",
+			"folder": "/Newsletter",
+			"gherkin": "Given I can navigate to the newsletter signup from the landing page\nWhen I navigate to the newsletter signup\nAnd I subscribe to the newsletter\nThen I receive feedback that I have subscribed sucessfully",
+			"tests": "EXT-KEY-7"
+		},
+		{
+			"extKey": "EXT-KEY-26",
+			"summary": "Test visitors can unsubscribe from the book store Newsletter",
+			"decription": "",
+			"testType": "Manual",
+			"folder": "/Newsletter",
+			"steps": [
+	            {
+	              	"action": "Navigate to the newsletter page from the landing page",
+	              	"data": "",
+	              	"result": "The newsletter page must be visible."
+	            },
+	            {
+	              	"action": "Press *Unsubscribe* to the newsletter",
+	              	"data": "",
+	              	"result": "A confirm dialog appears prompting the user for conformation."
+	            },
+	            {
+	              	"action": "Press *Confirm* to unsubscribe.",
+	              	"data": "",
+	              	"result": "User must receive feedback that he was unsubscribed successfully."
+	            }
+          	],
+			"tests": "EXT-KEY-7"
+		},
+		{
+			"extKey": "EXT-KEY-27",
+        	"summary": "Test visitors can navigate to the book details page",
+          	"testType": "Cucumber",
+          	"folder": "/Book Actions",
+        	"gherkin": "Given I am on a product lister page\nWhen I select one of the items\nThen I am on the Product detail page of the selected item\nAnd I can see details of the product",
+        	"tests": "EXT-KEY-14"
+        },
+        {
+        	"extKey": "EXT-KEY-28",
+            "summary": "Test visitors can add books to their shopping basket",
+          	"testType": "Cucumber",
+          	"folder": "/Shopping Basket",
+          	"gherkin": "Given I am on a product detail page\nWhen I select the size/color/amount\nAnd I click the add to basket button\nThen the product is added to my shopping basket",
+          	"tests": "EXT-KEY-10"
+        },
+        {
+        	"extKey": "EXT-KEY-29",
+            "summary": "Test visitors can remove books from their shopping basket",
+          	"testType": "Cucumber",
+          	"folder": "/Shopping Basket",
+          	"gherkin": "Given I am on shopping basket page\nWhen I click the remove from basket button for a listed book\nThen the book is deleted from my shopping basket",
+          	"tests": "EXT-KEY-11"
+        },
+        {
+        	"extKey": "EXT-KEY-30",
+        	"summary": "Test a visitor can view all the books in his shopping basket",
+          	"testType": "Cucumber",
+          	"folder": "/Shopping Basket",
+          	"gherkin": "Given that I have added books to my shopping basket\nWhen I click the shopping bag icon\nThen I land on the shopping bag page\nAnd I can see all the books in my shopping basket",
+          	"tests": "EXT-KEY-12"
+        },
+        {
+        	"extKey": "EXT-KEY-31",
+            "summary": "Test a visitor can do a valid search with a single keyword",
+          	"testType": "Cucumber",
+          	"folder": "/Search",
+          	"gherkin": "Given I am on the homepage to do a single keyword search\nWhen I do a single keyword search for <book_title>\nThen I see a single keyword search result page with more than zero results\n\n    Examples:\n      | book_title        |\n      | Rings             |\n      | Ulysses           |\n      | Moby              |\n      | Odyssey           |",
+          	"tests": "EXT-KEY-8"
+        },
+        {
+        	"extKey": "EXT-KEY-32",
+            "summary": "Test a visitor can do a valid search with multiple keywords",
+          	"testType": "Cucumber",
+          	"folder": "/Search",
+          	"gherkin": "Given I am on the homepage to do a single keyword search\nWhen I do a single keyword search for <book_title>\nThen I see a single keyword search result page with more than zero results\n\n    Examples:\n      | book_title        |\n      | Lord of the Rings |\n      | Moby Dick         |\n      | The Odyssey       |\n      | War and Peace     |",
+          	"tests": "EXT-KEY-8"
+        },
+        {
+        	"extKey": "EXT-KEY-33",
+            "summary": "Test a visitor can filter the search result",
+          	"testType": "Cucumber",
+          	"folder": "/Search",
+          	"gherkin": "Given I have done a search using a valid search term\nAnd I see a certain amount of items\nWhen I filter using a sub-keyword\nThen The results are filtered to display a smaller amount of items",
+          	"tests": "EXT-KEY-8"
+        },
+        {
+        	"extKey": "EXT-KEY-34",
+            "summary": "Shopping Basket User selects an item and clicks on \"express checkout\"",
+          	"testType": "Generic",
+          	"folder": "/Shopping Basket/Checkout",
+          	"definition": "User selects an item and clicks on \"express checkout\".Shopping Basket User selects an item and clicks on \"express checkout\""
+        },
+        {
+        	"extKey": "EXT-KEY-35",
+            "summary": "Favorites List User selects a book and clicks on the star",
+          	"testType": "Generic",
+          	"folder": "/Book Actions",
+          	"definition": "User selects a book and clicks on the star.Favorites List User selects a book and clicks on the star"
+        },
+        {
+        	"extKey": "EXT-KEY-36",
+            "summary": "Manual test of password reset procedure",
+          	"testType": "Manual",
+          	"folder": "/Account/Password Validation",
+          	"steps": [
+	            {
+	              	"action": "Open the App, choose option *My Profile > Logout*.",
+	             	"data": "",
+	              	"result": ""
+	            },
+	            {
+	              	"action": "On the login screen, select option *I lost my password*.",
+	              	"data": "",
+	              	"result": ""
+	            },
+	            {
+	              	"action": "On the email field, provide the address data and press *Reset my Password.*",
+	             	"data": "Email: user@test.com",
+	             	"result": "Information message:\n\"Check your mailbox for further instructions\""
+	            }
+          	],
+          	"tests": "EXT-KEY-15"
+        },
+        {
+        	"extKey": "EXT-KEY-37",
+            "summary": "Manual test of strong password validation",
+          	"testType": "Manual",
+          	"folder": "/Account/Password Validation",
+          	"steps": [
+	            {
+	              	"action": "Open the Change Password screen by selecting option \"My Profile > Password\"",
+	              	"data": "",
+	              	"result": ""
+	            },
+	            {
+	              	"action": "Fill the password fields with data",
+	              	"data": "Current Password:  passw0rd\nNew Password: p4ssw0rd\nConfirm New Password:  p4ssw0rd",
+	              	"result": "Error:\n\"Current password is incorrect\""
+	            },
+	            {
+	              	"action": "Close error message and fill again the password fields with data",
+	              	"data": "Current Password: P4ssw0rd\nNew Password: password\nConfirm New Password: password",
+	              	"result": "Error:\n\"New password is too simple\""
+	            },
+	            {
+	              	"action": "Close error message and fill again the password fields with data",
+	              	"data": "Current Password: P4ssw0rd\nNew Password: P4ssw0rd\nConfirm New Password: P4ssw0rd",
+	              	"result": "Information message:\n\"Password successfully changed\""
+	            }
+	        ],
+	        "tests": "EXT-KEY-17"
+        }
+	],
+	"preConditions": [
+		{
+			"extKey": "EXT-KEY-38",
+			"summary": "The user must be logged in",
+			"preconditionType": "Manual",
+			"steps": "The user must be logged in.",
+			"tests": [
+				"EXT-KEY-19"
+			]
+		},
+		{
+			"extKey": "EXT-KEY-39",
+			"summary": "The user is subscribed to the Newsletter",
+			"preconditionType": "Manual",
+			"steps": "The user must be subscribed to the Newsletter.\n\nGo to the Newsletter page and the subscription details should be displayed including a message saying the user is *currently subscribed* to the Newsletter.",
+			"tests": [
+				"EXT-KEY-26"
+			]
+		}
+	],
+	"testSets": [
+		{
+			"extKey": "EXT-KEY-40",
+			"summary": "Account Tests",
+			"tests": [
+				"EXT-KEY-18",
+				"EXT-KEY-19",
+				"EXT-KEY-22",
+				"EXT-KEY-21",
+				"EXT-KEY-20"
+			]
+		},
+		{
+			"extKey": "EXT-KEY-41",
+			"summary": "Subscription",
+			"tests": [
+				"EXT-KEY-25",
+				"EXT-KEY-26"
+			]
+		}
+	],
+	"testPlans": [
+		{
+			"extKey": "EXT-KEY-42",
+			"summary": "Test Plan for v1.0 release",
+			"fixVersions": ["1.0"],
+			"tests": [
+				{
+					"extKey": "EXT-KEY-32",
+					"folder": "/Search"
+				},
+				{
+					"extKey": "EXT-KEY-31",
+					"folder": "/Search"
+				},
+				{
+					"extKey": "EXT-KEY-30",
+					"folder": "/Shopping Basket"
+				},
+				{
+					"extKey": "EXT-KEY-33",
+					"folder": "/Search"
+				},
+				{
+					"extKey": "EXT-KEY-29",
+					"folder": "/Shopping Basket"
+				},
+				{
+					"extKey": "EXT-KEY-28",
+					"folder": "/Shopping Basket"
+				},
+				{
+					"extKey": "EXT-KEY-27",
+					"folder": "/Book Actions"
+				},
+				{
+					"extKey": "EXT-KEY-24",
+					"folder": "/Shopping Basket/Checkout"
+				},
+				{
+					"extKey": "EXT-KEY-23",
+					"folder": "/Shopping Basket/Checkout"
+				},
+				{
+					"extKey": "EXT-KEY-22",
+					"folder": "/"
+				},
+				{
+					"extKey": "EXT-KEY-21",
+					"folder": "/Account"
+				},
+				{
+					"extKey": "EXT-KEY-20",
+					"folder": "/Account"
+				},
+				{
+					"extKey": "EXT-KEY-19",
+					"folder": "/Account"
+				},
+				{
+					"extKey": "EXT-KEY-18",
+					"folder": "/Account"
+				},
+				{
+					"extKey": "EXT-KEY-37",
+					"folder": "/Account/Password Validation"
+				},
+				{
+					"extKey": "EXT-KEY-36",
+					"folder": "/Account/Password Validation"
+				},
+				{
+					"extKey": "EXT-KEY-25",
+					"folder": "/Newsletter"
+				}
+			]
+		},
+		{
+			"extKey": "EXT-KEY-44",
+			"summary": "Regression Test Plan for v1.0",
+			"fixVersions": ["1.0"]
+		}
+	]
+
+}

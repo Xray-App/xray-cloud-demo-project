@@ -1,0 +1,19 @@
+{
+   "fields": {
+        "project": {
+            "id": "PROJECT_ID"
+        },
+        "issuetype": {
+            "name": "Test Execution"
+        },
+        "summary": "Continuous Integration - Automated Serenity JUnit Tests",
+        "fixVersions": [
+            {
+                "name": "1.0"
+            }
+        ]
+    },
+    "xrayFields": {
+        "testPlanKey": "EXT-KEY-44"
+    }
+}
