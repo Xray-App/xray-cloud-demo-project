@@ -21,15 +21,14 @@ The script uses APIs from Jira and Xray to create all the entities based in thes
  - [xray.py](./xray.py) Xray API helper 
  - [resources/](./resources/) the resouces folder where the data and execution result files can be found
 
-# Requirements
+# Prerequisites
 
  * A [Jira Cloud Software](https://www.atlassian.com/software/jira/free) instance with [Xray](https://www.getxray.app/) installed
  * A Jira user email and respective API TOKEN: (https://confluence.atlassian.com/cloud/api-tokens-938839638.html)
  * An Xray API Key: (https://docs.getxray.app/display/XRAYCLOUD/Global+Settings%3A+API+Keys)
+ * The script is written in [Python](https://www.python.org/). You must install [Python 3.x](https://www.python.org/about/gettingstarted/) in order to execute the script.
 
 # How to use
-
-The script is written in [Python](https://www.python.org/). You must install [Python 3.x](https://www.python.org/about/gettingstarted/) in order to execute the script.
 
 ## Setup
 
@@ -53,7 +52,7 @@ CLIENT_SECRET = 'XXXXXXXXXXXXXXXXXX'
 ## Running the script
 
 ```
-> pip3 install requests
+> pip3 install -r requirements.txt
 > python3 demo.py
 
 usage: demo.py [-h] [-s] [-v]
