@@ -1,7 +1,7 @@
 This script creates a demonstration project for [Xray](https://www.getxray.app/) in [Jira Cloud Software](https://www.atlassian.com/software/jira/free).
 
 The created demo project contains:
- - *Requirement* issues (Epics and Stories), 
+ - *Requirement* (i.e., coverable) issues, namely Epics and Stories 
  - Test cases (Manual, Cucumber, Robot Framework, Nunit, JUnit, TestNG)
  - Preconditions
  - Test Sets
@@ -16,10 +16,15 @@ There are also other resource files used to import execution results in various 
 
 The script uses APIs from Jira and Xray to create all the entities based in these resources.
 
- - [demo.py](./demo.py) main script file. Drives the flow by consuming the resource files and sending the appropriate API requests.
+ - [demo.py](./demo.py) main script file. Drives the flow by consuming the resource files and sending the appropriate API requests
+ - [credentials.py](./credentials.py) configuration file; you need to update it (more info ahead)
+
+
+There are also some auxiliary files:
+
+ - [resources/](./resources/) the resources folder where the data and execution result files can be found
  - [jira.py](./jira.py) Jira API helper
  - [xray.py](./xray.py) Xray API helper 
- - [resources/](./resources/) the resouces folder where the data and execution result files can be found
 
 # Prerequisites
 
