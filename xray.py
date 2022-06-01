@@ -5,7 +5,7 @@ import credentials
 import logging
 log = logging.getLogger(__name__)
 
-XRAY_API = 'https://xray.cloud.xpand-it.com/api/v1'
+XRAY_API = 'https://xray.cloud.getxray.app/api/v2'
 
 class XrayAPI:
     def __init__(self):
