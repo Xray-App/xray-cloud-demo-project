@@ -54,7 +54,7 @@ CLIENT_SECRET = 'XXXXXXXXXXXXXXXXXX'
 
 ```
 > pip install requests
-> python demo.py
+> python3 demo.py
 
 usage: demo.py [-h] [-s] [-v]
 
