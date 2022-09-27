@@ -1,7 +1,7 @@
 This script creates a demonstration project for [Xray](https://www.getxray.app/) in [Jira Cloud Software](https://www.atlassian.com/software/jira/free).
 
 The created demo project contains:
- - *Requirement* issues (Epics and Stories), 
+ - *Requirement* (i.e., coverable) issues, namely Epics and Stories 
  - Test cases (Manual, Cucumber, Robot Framework, Nunit, JUnit, TestNG)
  - Preconditions
  - Test Sets
@@ -16,20 +16,24 @@ There are also other resource files used to import execution results in various 
 
 The script uses APIs from Jira and Xray to create all the entities based in these resources.
 
- - [demo.py](./demo.py) main script file. Drives the flow by consuming the resource files and sending the appropriate API requests.
+ - [demo.py](./demo.py) main script file. Drives the flow by consuming the resource files and sending the appropriate API requests
+ - [credentials.py](./credentials.py) configuration file; you need to update it (more info ahead)
+
+
+There are also some auxiliary files:
+
+ - [resources/](./resources/) the resources folder where the data and execution result files can be found
  - [jira.py](./jira.py) Jira API helper
  - [xray.py](./xray.py) Xray API helper 
- - [resources/](./resources/) the resouces folder where the data and execution result files can be found
 
-# Requirements
+# Prerequisites
 
  * A [Jira Cloud Software](https://www.atlassian.com/software/jira/free) instance with [Xray](https://www.getxray.app/) installed
  * A Jira user email and respective API TOKEN: (https://confluence.atlassian.com/cloud/api-tokens-938839638.html)
  * An Xray API Key: (https://docs.getxray.app/display/XRAYCLOUD/Global+Settings%3A+API+Keys)
+ * The script is written in [Python](https://www.python.org/). You must install [Python 3.x](https://www.python.org/about/gettingstarted/) in order to execute the script.
 
 # How to use
-
-The script is written in [Python](https://www.python.org/). You must install [Python 3.x](https://www.python.org/about/gettingstarted/) in order to execute the script.
 
 ## Setup
 
@@ -53,8 +57,8 @@ CLIENT_SECRET = 'XXXXXXXXXXXXXXXXXX'
 ## Running the script
 
 ```
-> pip install requests
-> python demo.py
+> pip3 install -r requirements.txt
+> python3 demo.py
 
 usage: demo.py [-h] [-s] [-v]
 
