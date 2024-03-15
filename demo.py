@@ -131,6 +131,13 @@ def createProject(data, scope, withSalt):
     fields = jira.getIssueFields()
     scope.withFields(fields)
 
+    # Add Epic name field to screen
+    epicNameCFId = scope.fields['Epic Name']['id']
+    epicLinkCFId = scope.fields['Epic Link']['id']
+    
+    jira.AddFieldToDefaultProjectScreen(epicNameCFId, project.key)
+    jira.AddFieldToDefaultProjectScreen(epicLinkCFId, project.key)
+    
     scope.withProject(project)
 
     return scope

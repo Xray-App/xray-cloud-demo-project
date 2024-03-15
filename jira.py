@@ -224,4 +224,30 @@ def createIssueLink(sourceKey, targetKey, issueLinkType):
 
     resp = requests.post(f'{credentials.INSTANCE}/rest/api/3/issueLink', auth=(credentials.USER, credentials.TOKEN), data=json_data, headers={'Content-Type':'application/json'})
     resp.raise_for_status()
+   
+def AddFieldToDefaultProjectScreen(fieldId, projectKey):
+    log.debug(f'Adding field "{fieldId}" to default issue screen of project "{projectKey}" ...')
+
+    # 1. get default screen
+    screens_resp = requests.get(f'{credentials.INSTANCE}/rest/api/3/screens', auth=(credentials.USER, credentials.TOKEN), headers={'Content-Type':'application/json'})
+    screens_resp.raise_for_status()
+
+    screens = screens_resp.json()
+
+    screen = next((s for s in screens['values'] if s['name'] == f'{projectKey}: Scrum Default Issue Screen'), None)
+
+    if screen != None:
+        # 2. Get tab
+        screenId = screen['id']
+        tabs_resp = requests.get(f'{credentials.INSTANCE}/rest/api/3/screens/{screenId}/tabs', auth=(credentials.USER, credentials.TOKEN), headers={'Content-Type':'application/json'})
+        tabs_resp.raise_for_status()
+
+        tabId = tabs_resp.json()[0]['id']
+
+        data = {
+            "fieldId": fieldId
+        }
+
+        resp = requests.post(f'{credentials.INSTANCE}/rest/api/3/screens/{screenId}/tabs/{tabId}/fields', auth=(credentials.USER, credentials.TOKEN), data=json.dumps(data), headers={'Content-Type':'application/json'})
+        resp.raise_for_status()
     
