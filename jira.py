@@ -228,18 +228,39 @@ def createIssueLink(sourceKey, targetKey, issueLinkType):
 def AddFieldToDefaultProjectScreen(fieldId, projectKey):
     log.debug(f'Adding field "{fieldId}" to default issue screen of project "{projectKey}" ...')
 
-    # 1. get default screen
-    screens_resp = requests.get(f'{credentials.INSTANCE}/rest/api/3/screens', auth=(credentials.USER, credentials.TOKEN), headers={'Content-Type':'application/json'})
-    screens_resp.raise_for_status()
+    # Initialize variables for pagination
+    isLast = False
+    startAt = 0
+    screens = []
 
-    screens = screens_resp.json()
+    # 1. Get default screen with pagination handling
+    while not isLast:
+        screens_resp = requests.get(
+            f'{credentials.INSTANCE}/rest/api/3/screens?startAt={startAt}', 
+            auth=(credentials.USER, credentials.TOKEN), 
+            headers={'Content-Type': 'application/json'}
+        )
+        screens_resp.raise_for_status()
 
-    screen = next((s for s in screens['values'] if s['name'] == f'{projectKey}: Scrum Default Issue Screen'), None)
+        resp_json = screens_resp.json()
+        screens.extend(resp_json['values'])
+        isLast = resp_json.get('isLast', True)  # Assume isLast if not provided
+        startAt += len(resp_json['values'])
 
-    if screen != None:
+        log.debug(f'Fetched {len(resp_json["values"])} screens')
+
+    # Find the specific screen
+    screen = next((s for s in screens if s['name'] == f'{projectKey}: Scrum Default Issue Screen'), None)
+    log.debug(f'{screen}')
+
+    if screen is not None:
         # 2. Get tab
         screenId = screen['id']
-        tabs_resp = requests.get(f'{credentials.INSTANCE}/rest/api/3/screens/{screenId}/tabs', auth=(credentials.USER, credentials.TOKEN), headers={'Content-Type':'application/json'})
+        tabs_resp = requests.get(
+            f'{credentials.INSTANCE}/rest/api/3/screens/{screenId}/tabs', 
+            auth=(credentials.USER, credentials.TOKEN), 
+            headers={'Content-Type': 'application/json'}
+        )
         tabs_resp.raise_for_status()
 
         tabId = tabs_resp.json()[0]['id']
@@ -247,7 +268,13 @@ def AddFieldToDefaultProjectScreen(fieldId, projectKey):
         data = {
             "fieldId": fieldId
         }
+        log.debug(f'Adding field "{fieldId}" to "{screenId}" issue screen in the tab {tabId} of project "{projectKey}" ...')
 
-        resp = requests.post(f'{credentials.INSTANCE}/rest/api/3/screens/{screenId}/tabs/{tabId}/fields', auth=(credentials.USER, credentials.TOKEN), data=json.dumps(data), headers={'Content-Type':'application/json'})
+        resp = requests.post(
+            f'{credentials.INSTANCE}/rest/api/3/screens/{screenId}/tabs/{tabId}/fields', 
+            auth=(credentials.USER, credentials.TOKEN), 
+            data=json.dumps(data), 
+            headers={'Content-Type': 'application/json'}
+        )
         resp.raise_for_status()
     
